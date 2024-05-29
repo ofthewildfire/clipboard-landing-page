@@ -1,0 +1,17 @@
+.hero {
+  text-align: center;
+  display: grid;
+  align-items: center;
+  min-height: 50vh;
+  gap: 1.5625rem;
+  padding: 2.5em 0;
+  background-image: url("images/bg-header-desktop.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  .logo {
+    display: block;
+    margin: 0 auto;
+  }
+}

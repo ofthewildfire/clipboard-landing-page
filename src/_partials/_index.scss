@@ -1,0 +1,61 @@
+@use "./features";
+@use "./colors";
+@use "./hero.scss";
+@use "./media_queries";
+@use "./access.scss";
+
+//Dark GreyishBlue Heading Color Mass Select
+.item-name,
+.snippets-title,
+.hero--title,
+.access-title {
+  color: colors.$DarkGrayishBlue;
+}
+
+.feature-item-sub-text,
+.hero--sub-heading,
+.snippets-text,
+.access-text {
+  color: colors.$GrayishBlue;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 1em 3em;
+  font-weight: 600;
+  font-family: inherit;
+  color: colors.$White;
+}
+
+.btn--primary {
+  background-color: colors.$StrongCyan;
+  box-shadow: 0px 3px 0px colors.$StrongCyanShadow;
+}
+
+.btn--secondary {
+  background-color: colors.$LightBlue;
+  box-shadow: 0px 3px 0px colors.$LightBlueShadow;
+}
+
+// Media query for btns
+
+@media screen and (min-width: 40rem) {
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .features-list {
+    text-align: left;
+  }
+}

@@ -1,0 +1,28 @@
+.feature-container-title {
+  text-align: center;
+  line-height: 1.5;
+}
+
+.features-image,
+.features-list,
+.feature-container-title {
+  padding: 1em;
+}
+
+.features-list {
+  list-style-type: none;
+  display: grid;
+  align-items: center;
+  gap: 2.5em;
+  text-align: center;
+
+  .feature-item {
+    line-height: 1.5;
+
+    .item-name {
+      display: block;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  }
+}
