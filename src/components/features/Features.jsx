@@ -9,7 +9,7 @@ const Features = () => {
         <div className="features-image">
           <img
             className="features-computer-image"
-            src="public/images/image-computer.png"
+            src="images/image-computer.png"
             alt="Image of an Apple Mac Desktop Computer"
             height={300}
             width={300}
