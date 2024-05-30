@@ -1,0 +1,19 @@
+.footer {
+  text-align: center;
+  display: grid;
+  gap: 2.5em;
+  padding: 2.5em 0;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    height: 2rem;
+    width: 2rem;
+    object-fit: contain;
+  }
+}

@@ -5,6 +5,19 @@
 @use "./access.scss";
 @use "./_workflow.scss";
 @use "./company-logos";
+@use "./cta";
+@use "./footer";
+
+// Defaults
+
+ul {
+  list-style-type: none;
+}
+
+.main-content {
+  display: grid;
+  gap: 5em;
+}
 
 //Dark GreyishBlue Heading Color Mass Select
 .item-name,
@@ -12,7 +25,8 @@
 .hero--title,
 .access-title,
 .workflow-title,
-.workflow-block-title {
+.workflow-block-title,
+.cta-title {
   color: colors.$DarkGrayishBlue;
   line-height: 1.5;
 }
@@ -22,7 +36,8 @@
 .snippets-text,
 .access-text,
 .workflow-text,
-.workflow-block-text {
+.workflow-block-text,
+.cta-text {
   color: colors.$GrayishBlue;
   line-height: 1.5;
 }
@@ -53,6 +68,16 @@
   box-shadow: 0px 3px 0px colors.$LightBlueShadow;
 }
 
+.footer {
+  background-color: colors.$GrayishBlueFooter;
+  color: colors.$GrayishBlue;
+
+  a {
+    text-decoration: none;
+    color: colors.$GrayishBlue;
+  }
+}
+
 // Media query for btns
 
 @media screen and (min-width: 40rem) {
@@ -75,5 +100,18 @@
   .company-users {
     display: flex;
     gap: 2.5em;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5em;
+    align-items: center;
+  }
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+    text-align: left;
   }
 }

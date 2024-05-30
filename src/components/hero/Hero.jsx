@@ -1,4 +1,5 @@
 import React from "react";
+import Buttons from "../reuseable/Buttons";
 
 const Hero = () => {
   return (
@@ -9,10 +10,7 @@ const Hero = () => {
         Clipboard allows you to track and organize everthing you copy. Instantly
         access your clipboard on all your devices.
       </p>
-      <div className="hero--btns btn-container">
-        <button className="btn btn--primary">Download for iOS</button>
-        <button className="btn btn--secondary">Download for Mac</button>
-      </div>
+      <Buttons />
     </div>
   );
 };
