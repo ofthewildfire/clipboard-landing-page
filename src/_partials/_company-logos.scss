@@ -1,0 +1,15 @@
+.company-users {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  align-items: center;
+  padding: 2.5em;
+
+  .company-logo {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+}

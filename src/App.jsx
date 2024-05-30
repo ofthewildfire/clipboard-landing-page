@@ -5,6 +5,7 @@ import Hero from "./components/hero/Hero";
 import Features from "./components/features/Features";
 import Access from "./components/access/Access";
 import Workflow from "./components/workflow/Workflow";
+import Companies from "./components/companies/Companies";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Features />
       <Access />
       <Workflow />
+      <Companies />
     </>
   );
 }

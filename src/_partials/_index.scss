@@ -4,6 +4,7 @@
 @use "./media_queries";
 @use "./access.scss";
 @use "./_workflow.scss";
+@use "./company-logos";
 
 //Dark GreyishBlue Heading Color Mass Select
 .item-name,
@@ -69,5 +70,10 @@
   .workflow-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .company-users {
+    display: flex;
+    gap: 2.5em;
   }
 }
