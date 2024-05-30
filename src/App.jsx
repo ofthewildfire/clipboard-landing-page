@@ -4,6 +4,7 @@ import "./App.scss";
 import Hero from "./components/hero/Hero";
 import Features from "./components/features/Features";
 import Access from "./components/access/Access";
+import Workflow from "./components/workflow/Workflow";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Features />
       <Access />
+      <Workflow />
     </>
   );
 }
