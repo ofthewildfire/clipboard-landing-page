@@ -4,7 +4,7 @@ import WorkflowContent from "./WorkflowContent";
 
 const Workflow = () => {
   return (
-    <div>
+    <div className="workflow">
       <WorkflowTitle />
       <WorkflowContent />
     </div>

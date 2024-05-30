@@ -3,12 +3,15 @@
 @use "./hero.scss";
 @use "./media_queries";
 @use "./access.scss";
+@use "./_workflow.scss";
 
 //Dark GreyishBlue Heading Color Mass Select
 .item-name,
 .snippets-title,
 .hero--title,
-.access-title {
+.access-title,
+.workflow-title,
+.workflow-block-title {
   color: colors.$DarkGrayishBlue;
   line-height: 1.5;
 }
@@ -16,7 +19,9 @@
 .feature-item-sub-text,
 .hero--sub-heading,
 .snippets-text,
-.access-text {
+.access-text,
+.workflow-text,
+.workflow-block-text {
   color: colors.$GrayishBlue;
   line-height: 1.5;
 }
@@ -59,5 +64,10 @@
 
   .features-list {
     text-align: left;
+  }
+
+  .workflow-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
   }
 }
