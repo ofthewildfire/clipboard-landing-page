@@ -114,4 +114,14 @@ ul {
     gap: 1.5em;
     text-align: left;
   }
+
+  .access-container-title,
+  .feature-container-title,
+  .workflow-title,
+  .cta-title,
+  .hero-title,
+  .hero--sub-heading {
+    max-width: 37.5rem;
+    margin: 0 auto;
+  }
 }
